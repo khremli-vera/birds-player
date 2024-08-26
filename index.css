@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth; 
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    margin-left: 135px;
+    margin-right: 135px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+
+
+li {
+    color: white;
+    padding-right: 40px;
+    
+
+}
+
+
+
+ul li:last-child {
+    padding-right: 0;
+}
+
+
+header img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+img.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+a.active {
+    color: #bdae82;
+}
+
+a:hover {
+    color: #bdae82;
+    
+}
+
+
+
+a img:hover {
+    filter: none;
+ }
+
+footer {
+    height: 60px;
+    display: flex;
+    margin-left: 135px;
+    margin-right: 135px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+footer img {
+    width: 135px;
+    height: 50px;
+}
+
+footer img:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 120px);
+    background-image: url("assets/img/forest.jpg");
+    justify-content:center;
+    align-items: center;
+}
+
+button {
+  
+    width: 160px;
+    height: 160px;
+    background-image: url("assets/svg/play.svg");
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+}
+
+button:hover {
+    filter: brightness(.85);
+}
+
+.pause {  
+    background-image: url("assets/svg/pause.svg");
+  }
+
+@media (max-width: 1024px) {
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        height: calc(100vh - 140px);
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+
+    li {
+        padding: 10px 20px;
+    }
+}
